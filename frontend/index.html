@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Sentiment Analysis App</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Sentiment Analysis</h1>
+    <p class="subtitle">Enter a sentence and let AI predict its sentiment</p>
+
+    <textarea id="textInput" placeholder="Type a sentence here... e.g. I love this internship!"></textarea>
+
+    <button id="predictBtn" onclick="predictSentiment()">Predict</button>
+
+    <div id="loader" class="loader hidden">Analyzing...</div>
+
+    <div id="resultCard" class="result-card hidden">
+      <div id="emoji" class="emoji"></div>
+      <div id="predictionText" class="prediction-text"></div>
+      <div id="confidenceText" class="confidence-text"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
